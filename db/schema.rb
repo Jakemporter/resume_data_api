@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_11_01_195612) do
     t.string "degree"
     t.string "university_name"
     t.text "details"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -31,6 +32,7 @@ ActiveRecord::Schema.define(version: 2020_11_01_195612) do
     t.string "job_title"
     t.string "company_name"
     t.text "details"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -40,12 +42,14 @@ ActiveRecord::Schema.define(version: 2020_11_01_195612) do
     t.string "description"
     t.string "url"
     t.string "screenshot"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "skills", force: :cascade do |t|
     t.string "name"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
