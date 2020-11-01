@@ -5,6 +5,7 @@ class CreateProjects < ActiveRecord::Migration[6.0]
       t.string :description
       t.string :url
       t.string :screenshot
+      t.integer :user_id
 
       t.timestamps
     end
