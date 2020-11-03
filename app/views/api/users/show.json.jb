@@ -1,4 +1,5 @@
 {
+  user_id: @user.id,
   first_name: @user.first_name,
   last_name: @user.last_name,
   email: @user.email,
@@ -10,4 +11,8 @@
   online_resume_url: @user.online_resume_url,
   github_url: @user.github_url,
   photo: @user.photo,
+  educations: @user.educations,
+  experiences: @user.experiences,
+  projects: @user.projects,
+  skills: @user.skills,
 }
