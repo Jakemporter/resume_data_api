@@ -2,6 +2,7 @@ class Api::EducationsController < ApplicationController
   before_action :authenticate_user
   def create
     education = Education.new(
+      user_id: current_user.id,
       start_date: params[:start_date],
       end_date: params[:end_date],
       degree: params[:degree],
@@ -9,7 +10,7 @@ class Api::EducationsController < ApplicationController
       details: params[:details],
     )
   if education.save
-    render json: { message: "Education created successfully" }, 
+    render json: { message: "Education created successfully" }
   else 
     render json: {errors: education.errors.full_messages }
   end 
