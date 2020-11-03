@@ -1,5 +1,6 @@
 @users.map do |user|
   {
+    user_id: user.id,
     first_name: user.first_name,
     last_name: user.last_name,
     email: user.email,
@@ -11,5 +12,9 @@
     online_resume_url: user.online_resume_url,
     github_url: user.github_url,
     photo: user.photo,
+    experiences: user.experiences,
+    educations: user.educations,
+    projects: user.projects,
+    skills: user.skills,
   }
 end
