@@ -12,5 +12,9 @@
     online_resume_url: user.online_resume_url,
     github_url: user.github_url,
     photo: user.photo,
+    experiences: user.experiences,
+    educations: user.educations,
+    projects: user.projects,
+    skills: user.skills,
   }
 end 
