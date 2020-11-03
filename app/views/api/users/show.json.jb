@@ -1,0 +1,13 @@
+{
+  first_name: @user.first_name,
+  last_name: @user.last_name,
+  email: @user.email,
+  phone_number: @user.phone_number,
+  short_bio: @user.short_bio,
+  linkedin_url: @user.linkedin_url,
+  twitter_handle: @user.twitter_handle,
+  website_url: @user.website_url,
+  online_resume_url: @user.online_resume_url,
+  github_url: @user.github_url,
+  photo: @user.photo,
+}
