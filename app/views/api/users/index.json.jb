@@ -9,7 +9,7 @@
     twitter_handle: user.twitter_handle,
     website_url: user.website_url,
     online_resume_url: user.online_resume_url,
-    github_url: user.github.url,
+    github_url: user.github_url,
     photo: user.photo,
   }
-end 
+end
