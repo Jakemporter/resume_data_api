@@ -17,4 +17,4 @@
     projects: user.projects,
     skills: user.skills,
   }
-end 
+end
