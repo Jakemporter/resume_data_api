@@ -1,5 +1,5 @@
 class Api::EducationsController < ApplicationController
-  before_action
+  before_action :authenticate_user
   def create
     # education = Education.new
 
@@ -14,7 +14,7 @@ class Api::EducationsController < ApplicationController
     @education.university_name = params[:university_name] || @education.university_name
     @education.details = params[:details] || @education.details
     if @education.save
-      render 
+      render "show.json.jb"
     end
   end 
 end
